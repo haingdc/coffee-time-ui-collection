@@ -6,10 +6,17 @@ const config: webpack.Configuration = {
   entry: {
     index: "./src/index.ts",
   },
+  devtool: 'source-map',
   output: {
     path: resolve(__dirname, "dist"),
     filename: "[name].js",
+    library: {
+      type: 'module',
+    },
     clean: true,
+  },
+  experiments: {
+    outputModule: true,
   },
   resolve: {
     modules: [
@@ -47,8 +54,15 @@ const config: webpack.Configuration = {
     ],
   },
   optimization: {
-    minimize: false
-  }
+    minimize: false,
+    moduleIds: "named",
+    chunkIds: "named",
+    splitChunks: false,
+  },
+  externals: {
+    react: 'react',
+    'react-dom': 'react-dom',
+  },
 };
 
 export default config;
