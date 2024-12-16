@@ -1,1 +1,1 @@
-export * from "./carousel/index.ts";
+export * from "./carousel/index";

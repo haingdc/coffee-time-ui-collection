@@ -1,9 +1,11 @@
-import webpack from "webpack";
+import type webpack from "webpack";
 import { resolve } from "node:path";
 
 const config: webpack.Configuration = {
   mode: "production",
-  entry: "./src/index.ts",
+  entry: {
+    index: "./src/index.ts",
+  },
   output: {
     path: resolve(__dirname, "dist"),
     filename: "[name].js",
@@ -20,6 +22,16 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader',
+          options: {
+            configFile: "tsconfig-ts-loader.json",
+          },
+        },
+      },
+      {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: [{
@@ -29,10 +41,14 @@ const config: webpack.Configuration = {
       },
       {
         test: /\.css$/, // Kiểm tra tệp CSS
+        exclude: /node_modules/,
         use: ['style-loader', 'css-loader'], // Sử dụng loader để xử lý
       },
     ],
   },
+  optimization: {
+    minimize: false
+  }
 };
 
 export default config;

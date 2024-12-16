@@ -9,6 +9,7 @@
     "npm:@types/babel__core@^7.20.5": "7.20.5",
     "npm:@types/node@*": "22.5.4",
     "npm:@types/node@^22.10.2": "22.10.2",
+    "npm:@types/react@^19.0.1": "19.0.1",
     "npm:@types/webpack@^5.28.5": "5.28.5",
     "npm:babel-loader@^9.2.1": "9.2.1_@babel+core@7.26.0_webpack@5.97.1",
     "npm:clsx@^2.1.1": "2.1.1",
@@ -17,6 +18,7 @@
     "npm:style-loader@4": "4.0.0_webpack@5.97.1",
     "npm:ts-loader@^9.5.1": "9.5.1_typescript@5.7.2_webpack@5.97.1",
     "npm:ts-node@^10.9.2": "10.9.2_@types+node@22.5.4_typescript@5.7.2",
+    "npm:tsconfig-paths-webpack-plugin@^4.2.0": "4.2.0",
     "npm:typescript@^5.7.2": "5.7.2",
     "npm:webpack-cli@^5.1.4": "5.1.4_webpack@5.97.1",
     "npm:webpack@*": "5.97.1",
@@ -1078,6 +1080,12 @@
         "undici-types@6.19.8"
       ]
     },
+    "@types/react@19.0.1": {
+      "integrity": "sha512-YW6614BDhqbpR5KtUYzTA+zlA7nayzJRA9ljz9CQoxthR0sDisYZLuvSMsil36t4EH/uAt8T52Xb4sVw17G+SQ==",
+      "dependencies": [
+        "csstype"
+      ]
+    },
     "@types/webpack@5.28.5": {
       "integrity": "sha512-wR87cgvxj3p6D0Crt1r5avwqffqPXUkNlnQ1mjU93G7gCuFjufZR4I6j8cz5g1F1tTYpfOOFvly+cmIQwL9wvw==",
       "dependencies": [
@@ -1445,6 +1453,9 @@
     },
     "cssesc@3.0.0": {
       "integrity": "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg=="
+    },
+    "csstype@3.1.3": {
+      "integrity": "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="
     },
     "debug@4.4.0": {
       "integrity": "sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==",
@@ -1826,6 +1837,9 @@
         "mime-db"
       ]
     },
+    "minimist@1.2.8": {
+      "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA=="
+    },
     "ms@2.1.3": {
       "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="
     },
@@ -2119,6 +2133,9 @@
         "@storybook/core"
       ]
     },
+    "strip-bom@3.0.0": {
+      "integrity": "sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA=="
+    },
     "style-loader@4.0.0_webpack@5.97.1": {
       "integrity": "sha512-1V4WqhhZZgjVAVJyt7TdDPZoPBPNHbekX4fWnCJL1yQukhCeZhJySUL+gL9y6sNdN95uEOS83Y55SqHcP7MzLA==",
       "dependencies": [
@@ -2202,6 +2219,23 @@
         "typescript",
         "v8-compile-cache-lib",
         "yn"
+      ]
+    },
+    "tsconfig-paths-webpack-plugin@4.2.0": {
+      "integrity": "sha512-zbem3rfRS8BgeNK50Zz5SIQgXzLafiHjOwUAvk/38/o1jHn/V5QAgVUcz884or7WYcPaH3N2CIfUc2u0ul7UcA==",
+      "dependencies": [
+        "chalk",
+        "enhanced-resolve",
+        "tapable",
+        "tsconfig-paths"
+      ]
+    },
+    "tsconfig-paths@4.2.0": {
+      "integrity": "sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==",
+      "dependencies": [
+        "json5",
+        "minimist",
+        "strip-bom"
       ]
     },
     "tslib@2.8.1": {
@@ -2385,6 +2419,7 @@
       "npm:@babel/preset-typescript@^7.26.0",
       "npm:@types/babel__core@^7.20.5",
       "npm:@types/node@^22.10.2",
+      "npm:@types/react@^19.0.1",
       "npm:@types/webpack@^5.28.5",
       "npm:babel-loader@^9.2.1",
       "npm:clsx@^2.1.1",
@@ -2392,6 +2427,7 @@
       "npm:style-loader@4",
       "npm:ts-loader@^9.5.1",
       "npm:ts-node@^10.9.2",
+      "npm:tsconfig-paths-webpack-plugin@^4.2.0",
       "npm:typescript@^5.7.2",
       "npm:webpack-cli@^5.1.4",
       "npm:webpack@^5.97.1"
