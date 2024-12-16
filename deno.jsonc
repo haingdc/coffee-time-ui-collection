@@ -1,0 +1,57 @@
+{
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev": "deno run -A npm:webpack --config webpack.config.ts"
+  },
+  "imports": {
+    "@babel/core": "npm:@babel/core@^7.26.0",
+    "@babel/preset-env": "npm:@babel/preset-env@^7.26.0",
+    "@babel/preset-react": "npm:@babel/preset-react@^7.26.3",
+    "@babel/preset-typescript": "npm:@babel/preset-typescript@^7.26.0",
+    "@std/path": "jsr:@std/path@^1.0.8",
+    "@types/babel__core": "npm:@types/babel__core@^7.20.5",
+    "@types/node": "npm:@types/node@^22.10.2",
+    "@types/webpack": "npm:@types/webpack@^5.28.5",
+    "babel-loader": "npm:babel-loader@^9.2.1",
+    "clsx": "npm:clsx@^2.1.1",
+    "css-loader": "npm:css-loader@^7.1.2",
+    "react": "https://esm.sh/v135/react@19.0.0",
+    "react/": "https://esm.sh/v135/react@19.0.0/",
+    "style-loader": "npm:style-loader@^4.0.0",
+    // "react": "npm:react@^19.0.0",
+    // "react-dom": "npm:react-dom@^19.0.0",
+    "ts-loader": "npm:ts-loader@^9.5.1",
+    "ts-node": "npm:ts-node@^10.9.2",
+    "typescript": "npm:typescript@^5.7.2",
+    "webpack": "npm:webpack@^5.97.1",
+    "webpack-cli": "npm:webpack-cli@^5.1.4"
+  },
+  "scopes": {
+    "https://esm.sh/v135/": {
+      "loose-envify": "https://esm.sh/v135/loose-envify@1.4.0",
+      "scheduler": "https://esm.sh/v135/scheduler@0.23.2"
+    }
+  },
+  "compilerOptions": {
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": [
+      "deno.ns",
+      "dom"
+    ]
+  },
+  "fmt": {
+    "useTabs": true,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/"]
+  },
+  "exclude": [
+    "dist/"
+  ]
+}
