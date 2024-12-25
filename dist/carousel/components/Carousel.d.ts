@@ -1,5 +1,5 @@
-import React from 'react';
-import './carousel.css';
+import type React from 'react';
+import './styles.css';
 export interface CarouselParentsProps extends React.DetailsHTMLAttributes<HTMLElement>, React.PropsWithChildren {
     items: Array<{
         src: string;

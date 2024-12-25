@@ -2,18 +2,13 @@
   "name": "@hn/coffee-time-ui-collection",
   "version": "0.1.0",
   "license": "MIT",
-  // "exports": {
-  //   ".": {
-  //     "module": "./dist/index.js",
-  //     "types": "./dist/index.d.ts"
-  //   }
-  // },
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./dist/index.js"
   },
   "nodeModulesDir": "auto",
   "tasks": {
-    "dev": "deno run -A npm:webpack --config webpack.config.ts"
+    // "dev": "deno run -A npm:webpack --config webpack.config.ts",
+    "bundle": "deno run -A bundle.ts"
   },
   "imports": {
     "@babel/core": "npm:@babel/core@^7.26.0",
@@ -28,11 +23,11 @@
     "babel-loader": "npm:babel-loader@^9.2.1",
     "clsx": "npm:clsx@^2.1.1",
     "css-loader": "npm:css-loader@^7.1.2",
-    "react": "https://esm.sh/v135/react@19.0.0",
-    "react/": "https://esm.sh/v135/react@19.0.0/",
+    // "react": "https://esm.sh/v135/react@19.0.0",
+    // "react/": "https://esm.sh/v135/react@19.0.0/",
     "style-loader": "npm:style-loader@^4.0.0",
-    // "react": "npm:react@^19.0.0",
-    // "react-dom": "npm:react-dom@^19.0.0",
+    "react": "npm:react@^19.0.0",
+    "react-dom": "npm:react-dom@^19.0.0",
     "ts-loader": "npm:ts-loader@^9.5.1",
     "ts-node": "npm:ts-node@^10.9.2",
     "tsconfig-paths-webpack-plugin": "npm:tsconfig-paths-webpack-plugin@^4.2.0",
@@ -66,6 +61,6 @@
     "include": ["src/"]
   },
   "exclude": [
-    "src/"
+    // "src/"
   ]
 }

@@ -1,6 +1,7 @@
+import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
-/***/ "./node_modules/.deno/css-loader@7.1.2/node_modules/css-loader/dist/cjs.js!./src/carousel/components/Carousel.css":
+/***/ "./node_modules/.deno/css-loader@7.1.2/node_modules/css-loader/dist/cjs.js!./src/carousel/components/styles.css":
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -109,7 +110,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.re-container{
       display: none;
     }
   }
-}`, "",{"version":3,"sources":["webpack://./src/carousel/components/Carousel.css"],"names":[],"mappings":"AAAA;CACC,WAAW;CACX,aAAa;CACb,kBAAkB;AACnB;AACA;CACC,YAAY;CACZ,aAAa;CACb,cAAc;CACd,kBAAkB;CAClB,4BAA4B;CAC5B,mBAAmB;;AAEpB;AACA;CACC,YAAY;CACZ,aAAa;CACb,cAAc;CACd,kBAAkB;CAClB,OAAO;CACP,MAAM;CACN,kFAAkF;CAClF,yCAAyC;AAC1C;AACA;CACC,gCAAgC;AACjC;AACA;CACC,cAAc;CACd,yBAAyB;AAC1B;AACA;CACC,kBAAkB;CAClB,kBAAkB;CAClB,iBAAiB;CACjB,8CAA8C;CAC9C,WAAW;CACX,eAAe;CACf,WAAW;CACX,aAAa;CACb,aAAa;CACb,kBAAkB;AACnB;AACA;CACC,cAAc;AACf;AACA;CACC,WAAW;CACX,kBAAkB;CAClB,aAAa;CACb,YAAY;CACZ,SAAS;CACT,kBAAkB;AACnB;AACA;CACC,oBAAoB;CACpB,WAAW;CACX,cAAc;CACd,WAAW;CACX,YAAY;CACZ,YAAY;CACZ,kFAAiF;AAClF;AACA;CACC,UAAU;AACX;AACA;CACC,8BAA8B;CAC9B,iBAAiB;AAClB;;AAEA;EACE;IACE,aAAa;EACf;EACA;IACE,YAAY;IACZ,aAAa;IACb;MACE,WAAW;MACX,YAAY;MACZ,iBAAiB;IACnB;IACA;MACE,aAAa;IACf;EACF;AACF","sourcesContent":[".re-container{\n\twidth: 100%;\n\theight: 450px;\n\tposition: relative;\n}\n.re-wrapper{\n\twidth: 481px;\n\theight: 316px;\n\tmargin: 0 auto;\n\tposition: relative;\n\ttransform-style: preserve-3d;\n\tperspective: 1000px;\n\t\n}\n.re-wrapper a{\n\twidth: 482px;\n\theight: 316px;\n\tdisplay: block;\n\tposition: absolute;\n\tleft: 0;\n\ttop: 0;\n\tbackground: transparent url(/images/gallery-images/browser.png) no-repeat top left;\n\tbox-shadow: 0px 10px 20px rgba(0,0,0,0.3);\n}\n.re-wrapper a.re-transition{\n\ttransition: all 0.5s ease-in-out;\n}\n.re-wrapper a img{\n\tdisplay: block;\n\tpadding: 41px 0px 0px 1px;\n}\n.re-wrapper a div{\n\tfont-style: italic;\n\ttext-align: center;\n\tline-height: 50px;\n\ttext-shadow: 1px 1px 1px rgba(255,255,255,0.5);\n\tcolor: #333;\n\tfont-size: 16px;\n\twidth: 100%;\n\tbottom: -55px;\n\tdisplay: none;\n\tposition: absolute;\n}\n.re-wrapper a.re-center div{\n\tdisplay: block;\n}\n.re-container nav{\n\twidth: 58px;\n\tposition: absolute;\n\tz-index: 1000;\n\tbottom: 40px;\n\tleft: 50%;\n\tmargin-left: -29px;\n}\n.re-container nav span{\n\ttext-indent: -9000px;\n\tfloat: left;\n\tcursor:pointer;\n\twidth: 24px;\n\theight: 25px;\n\topacity: 0.8;\n\tbackground: transparent url(/images/gallery-images/arrows.png) no-repeat top left;\n}\n.re-container nav span:hover{\n\topacity: 1;\n}\n.re-container nav span.re-next{\n\tbackground-position: top right;\n\tmargin-left: 10px;\n}\n\n@layer my-components {\n  .re-carousel-parents {\n    display: flex;\n  }\n  .re-carousel-item {\n    width: 400px;\n    height: 200px;\n    img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n    }\n    &.carousel-item-freeze {\n      display: none;\n    }\n  }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/carousel/components/styles.css"],"names":[],"mappings":"AAAA;CACC,WAAW;CACX,aAAa;CACb,kBAAkB;AACnB;AACA;CACC,YAAY;CACZ,aAAa;CACb,cAAc;CACd,kBAAkB;CAClB,4BAA4B;CAC5B,mBAAmB;;AAEpB;AACA;CACC,YAAY;CACZ,aAAa;CACb,cAAc;CACd,kBAAkB;CAClB,OAAO;CACP,MAAM;CACN,kFAAkF;CAClF,yCAAyC;AAC1C;AACA;CACC,gCAAgC;AACjC;AACA;CACC,cAAc;CACd,yBAAyB;AAC1B;AACA;CACC,kBAAkB;CAClB,kBAAkB;CAClB,iBAAiB;CACjB,8CAA8C;CAC9C,WAAW;CACX,eAAe;CACf,WAAW;CACX,aAAa;CACb,aAAa;CACb,kBAAkB;AACnB;AACA;CACC,cAAc;AACf;AACA;CACC,WAAW;CACX,kBAAkB;CAClB,aAAa;CACb,YAAY;CACZ,SAAS;CACT,kBAAkB;AACnB;AACA;CACC,oBAAoB;CACpB,WAAW;CACX,cAAc;CACd,WAAW;CACX,YAAY;CACZ,YAAY;CACZ,kFAAiF;AAClF;AACA;CACC,UAAU;AACX;AACA;CACC,8BAA8B;CAC9B,iBAAiB;AAClB;;AAEA;EACE;IACE,aAAa;EACf;EACA;IACE,YAAY;IACZ,aAAa;IACb;MACE,WAAW;MACX,YAAY;MACZ,iBAAiB;IACnB;IACA;MACE,aAAa;IACf;EACF;AACF","sourcesContent":[".re-container{\n\twidth: 100%;\n\theight: 450px;\n\tposition: relative;\n}\n.re-wrapper{\n\twidth: 481px;\n\theight: 316px;\n\tmargin: 0 auto;\n\tposition: relative;\n\ttransform-style: preserve-3d;\n\tperspective: 1000px;\n\t\n}\n.re-wrapper a{\n\twidth: 482px;\n\theight: 316px;\n\tdisplay: block;\n\tposition: absolute;\n\tleft: 0;\n\ttop: 0;\n\tbackground: transparent url(/images/gallery-images/browser.png) no-repeat top left;\n\tbox-shadow: 0px 10px 20px rgba(0,0,0,0.3);\n}\n.re-wrapper a.re-transition{\n\ttransition: all 0.5s ease-in-out;\n}\n.re-wrapper a img{\n\tdisplay: block;\n\tpadding: 41px 0px 0px 1px;\n}\n.re-wrapper a div{\n\tfont-style: italic;\n\ttext-align: center;\n\tline-height: 50px;\n\ttext-shadow: 1px 1px 1px rgba(255,255,255,0.5);\n\tcolor: #333;\n\tfont-size: 16px;\n\twidth: 100%;\n\tbottom: -55px;\n\tdisplay: none;\n\tposition: absolute;\n}\n.re-wrapper a.re-center div{\n\tdisplay: block;\n}\n.re-container nav{\n\twidth: 58px;\n\tposition: absolute;\n\tz-index: 1000;\n\tbottom: 40px;\n\tleft: 50%;\n\tmargin-left: -29px;\n}\n.re-container nav span{\n\ttext-indent: -9000px;\n\tfloat: left;\n\tcursor:pointer;\n\twidth: 24px;\n\theight: 25px;\n\topacity: 0.8;\n\tbackground: transparent url(/images/gallery-images/arrows.png) no-repeat top left;\n}\n.re-container nav span:hover{\n\topacity: 1;\n}\n.re-container nav span.re-next{\n\tbackground-position: top right;\n\tmargin-left: 10px;\n}\n\n@layer my-components {\n  .re-carousel-parents {\n    display: flex;\n  }\n  .re-carousel-item {\n    width: 400px;\n    height: 200px;\n    img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n    }\n    &.carousel-item-freeze {\n      display: none;\n    }\n  }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -258,6 +259,60 @@ module.exports = function (item) {
   }
   return [content].join("\n");
 };
+
+/***/ }),
+
+/***/ "./node_modules/.deno/react@19.0.0/node_modules/react/cjs/react-jsx-runtime.production.js":
+/***/ ((__unused_webpack_module, exports) => {
+
+var __webpack_unused_export__;
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"),
+  REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+  var key = null;
+  void 0 !== maybeKey && (key = "" + maybeKey);
+  void 0 !== config.key && (key = "" + config.key);
+  if ("key" in config) {
+    maybeKey = {};
+    for (var propName in config)
+      "key" !== propName && (maybeKey[propName] = config[propName]);
+  } else maybeKey = config;
+  config = maybeKey.ref;
+  return {
+    $$typeof: REACT_ELEMENT_TYPE,
+    type: type,
+    key: key,
+    ref: void 0 !== config ? config : null,
+    props: maybeKey
+  };
+}
+__webpack_unused_export__ = REACT_FRAGMENT_TYPE;
+exports.jsx = jsxProd;
+exports.jsxs = jsxProd;
+
+
+/***/ }),
+
+/***/ "./node_modules/.deno/react@19.0.0/node_modules/react/jsx-runtime.js":
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+if (true) {
+  module.exports = __webpack_require__("./node_modules/.deno/react@19.0.0/node_modules/react/cjs/react-jsx-runtime.production.js");
+} else {}
+
 
 /***/ }),
 
@@ -631,6 +686,16 @@ __webpack_require__.d(__webpack_exports__, {
   F: () => (/* reexport */ components_Carousel)
 });
 
+// EXTERNAL MODULE: ./node_modules/.deno/react@19.0.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__("./node_modules/.deno/react@19.0.0/node_modules/react/jsx-runtime.js");
+;// ./node_modules/.deno/clsx@2.1.1/node_modules/clsx/dist/lite.mjs
+function clsx(){for(var t,r=0,e="",n=arguments.length;r<n;r++)(t=arguments[r])&&"string"==typeof t&&(e+=(e&&" ")+t);return e}/* harmony default export */ const lite = (clsx);
+;// external "react"
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
+const external_react_namespaceObject = x({ ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
 // EXTERNAL MODULE: ./node_modules/.deno/style-loader@4.0.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__("./node_modules/.deno/style-loader@4.0.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -649,9 +714,9 @@ var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleE
 // EXTERNAL MODULE: ./node_modules/.deno/style-loader@4.0.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
 var styleTagTransform = __webpack_require__("./node_modules/.deno/style-loader@4.0.0/node_modules/style-loader/dist/runtime/styleTagTransform.js");
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ./node_modules/.deno/css-loader@7.1.2/node_modules/css-loader/dist/cjs.js!./src/carousel/components/Carousel.css
-var Carousel = __webpack_require__("./node_modules/.deno/css-loader@7.1.2/node_modules/css-loader/dist/cjs.js!./src/carousel/components/Carousel.css");
-;// ./src/carousel/components/Carousel.css
+// EXTERNAL MODULE: ./node_modules/.deno/css-loader@7.1.2/node_modules/css-loader/dist/cjs.js!./src/carousel/components/styles.css
+var styles = __webpack_require__("./node_modules/.deno/css-loader@7.1.2/node_modules/css-loader/dist/cjs.js!./src/carousel/components/styles.css");
+;// ./src/carousel/components/styles.css
 
       
       
@@ -671,18 +736,148 @@ options.insert = insertBySelector_default().bind(null, "head");
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(Carousel/* default */.A, options);
+var update = injectStylesIntoStyleTag_default()(styles/* default */.A, options);
 
 
 
 
-       /* harmony default export */ const components_Carousel = (Carousel/* default */.A && Carousel/* default */.A.locals ? Carousel/* default */.A.locals : undefined);
+       /* harmony default export */ const components_styles = (styles/* default */.A && styles/* default */.A.locals ? styles/* default */.A.locals : undefined);
+
+;// ./src/carousel/components/Carousel.tsx
+
+
+
+
+const Carousel = ({ items, ...props }) => {
+    const [current, setCurrent] = (0,external_react_namespaceObject.useState)(0);
+    const [isAnimation, setIsAnimation] = (0,external_react_namespaceObject.useState)(false);
+    const left = current === 0 ? items.length - 1 : current - 1;
+    const right = current === items.length - 1 ? 0 : current + 1;
+    // TODO: next và prev chỉ có khi count > 3, cần thêm điều kiện kiểm tra
+    const next = right === items.length - 1 ? 0 : right + 1;
+    const prev = left === 0 ? items.length - 1 : left - 1;
+    const _getCoordinates = (position) => {
+        switch (position) {
+            case 'outleft':
+                return {
+                    transform: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
+                    opacity: 0,
+                    visibility: 'hidden',
+                };
+                break;
+            case 'outright':
+                return {
+                    transform: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
+                    opacity: 0,
+                    visibility: 'hidden',
+                };
+                break;
+            case 'left':
+                return {
+                    transform: 'translateX(-350px) translateZ(-200px) rotateY(45deg)',
+                    opacity: 1,
+                    visibility: 'visible',
+                };
+                break;
+            case 'right':
+                return {
+                    transform: 'translateX(350px) translateZ(-200px) rotateY(-45deg)',
+                    opacity: 1,
+                    visibility: 'visible',
+                };
+                break;
+            case 'center':
+            default:
+                return {
+                    transform: 'translateX(0px) translateZ(0px) rotateY(0deg)',
+                    opacity: 1,
+                    visibility: 'visible',
+                };
+                break;
+        }
+    };
+    const _navigate = (direction) => {
+        if (isAnimation)
+            return;
+        setIsAnimation(true);
+        switch (direction) {
+            case 'next':
+                setCurrent((prev) => {
+                    return prev === items.length - 1 ? 0 : prev + 1;
+                });
+                break;
+            case 'prev':
+                setCurrent((prev) => {
+                    return prev === 0 ? items.length - 1 : prev - 1;
+                });
+                break;
+        }
+    };
+    const handlePrev = () => {
+        _navigate('prev');
+    };
+    const handleNext = () => {
+        _navigate('next');
+    };
+    const onTransitionEnd = () => {
+        setIsAnimation(false);
+    };
+    return ((0,jsx_runtime.jsxs)("div", { id: 're-container', className: 're-container re-carousel-parents', ...props, children: [(0,jsx_runtime.jsx)("div", { className: 're-wrapper', onTransitionEnd: onTransitionEnd, children: items.map((item, index) => {
+                    let style;
+                    switch (index) {
+                        case left:
+                            style = {
+                                transform: 'translateX(-350px) translateZ(-200px) rotateY(45deg)',
+                                opacity: 1,
+                                visibility: 'visible',
+                            };
+                            break;
+                        case right:
+                            style = {
+                                transform: 'translateX(350px) translateZ(-200px) rotateY(-45deg)',
+                                opacity: 1,
+                                visibility: 'visible',
+                            };
+                            break;
+                        case current:
+                            style = {
+                                opacity: 1,
+                                visibility: 'visible',
+                            };
+                            break;
+                        case next:
+                            style = _getCoordinates('outright');
+                            break;
+                        case prev:
+                            style = _getCoordinates('outleft');
+                            break;
+                        default:
+                            style = { opacity: 0, visibility: 'hidden' };
+                    }
+                    return ((0,jsx_runtime.jsx)("a", { href: '#', className: lite('re-carousel-item', current === index ? 're-center' : '', isAnimation &&
+                            [current, left, right, next, prev].includes(index)
+                            ? 're-transition'
+                            : ''), style: style, children: (0,jsx_runtime.jsx)("img", { src: item.src, alt: index === current
+                                ? 'current'
+                                : index === left
+                                    ? 'left'
+                                    : index === right
+                                        ? 'right'
+                                        : index === next
+                                            ? 'next'
+                                            : index === prev
+                                                ? 'prev'
+                                                : '' }) }, index));
+                }) }), items.length > 3 && ((0,jsx_runtime.jsxs)("nav", { children: [(0,jsx_runtime.jsx)("span", { className: 're-prev', onClick: handlePrev, children: "<" }), (0,jsx_runtime.jsx)("span", { className: 're-next', onClick: handleNext, children: ">" })] }))] }));
+};
+/* harmony default export */ const components_Carousel = (Carousel);
 
 ;// ./src/carousel/index.ts
 
 
 ;// ./src/index.ts
 
+// export * from "./list";
 
 var __webpack_exports__Carousel = __webpack_exports__.F;
 export { __webpack_exports__Carousel as Carousel };

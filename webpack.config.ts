@@ -1,6 +1,8 @@
 import type webpack from "webpack";
 import { resolve } from "node:path";
 
+const __dirname = import.meta.dirname as string
+
 const config: webpack.Configuration = {
   mode: "production",
   entry: {
@@ -29,28 +31,33 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'ts-loader',
-          options: {
-            configFile: "tsconfig-ts-loader.json",
-          },
-        },
-      },
-      {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
-        use: [{
-          loader: "babel-loader",
-          options: { },
-        }],
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              configFile: "tsconfig-ts-loader.json",
+            },
+          },
+          // {
+          //   loader: "babel-loader",
+          //   options: { },
+          // }
+        ],
       },
       {
-        test: /\.css$/, // Kiểm tra tệp CSS
-        exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'], // Sử dụng loader để xử lý
-      },
+        test: /\.css$/i,
+        use: [
+          // The `injectType`  option can be avoided because it is default behaviour
+          { loader: "style-loader", options: { injectType: "styleTag" } },
+          {
+            loader: "css-loader",
+            // Uncomment it if you want to use CSS modules
+            // options: { modules: true }
+          },
+        ],
+      }, 
     ],
   },
   optimization: {

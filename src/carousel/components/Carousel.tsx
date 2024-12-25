@@ -1,6 +1,7 @@
 import clsx from 'clsx/lite'
-import React, { useState } from 'react'
-import './carousel.css'
+import type React from 'react'
+import { useState } from 'react'
+import './styles.css'
 
 export interface CarouselParentsProps
   extends React.DetailsHTMLAttributes<HTMLElement>,
@@ -9,7 +10,6 @@ export interface CarouselParentsProps
 }
 
 const Carousel: React.FC<CarouselParentsProps> = ({
-  className,
   items,
   ...props
 }) => {
