@@ -748,7 +748,7 @@ var update = injectStylesIntoStyleTag_default()(styles/* default */.A, options);
 
 
 
-const Carousel = ({ items, ...props }) => {
+const Carousel = ({ className, items, ...props }) => {
     const [current, setCurrent] = (0,external_react_namespaceObject.useState)(0);
     const [isAnimation, setIsAnimation] = (0,external_react_namespaceObject.useState)(false);
     const left = current === 0 ? items.length - 1 : current - 1;

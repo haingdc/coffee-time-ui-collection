@@ -10,6 +10,7 @@ export interface CarouselParentsProps
 }
 
 const Carousel: React.FC<CarouselParentsProps> = ({
+  className,
   items,
   ...props
 }) => {
