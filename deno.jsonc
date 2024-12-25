@@ -4,7 +4,7 @@
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
-    "./dist/": "./dist/"
+    "./dist": "./dist/index.js"
   },
   "nodeModulesDir": "auto",
   "tasks": {
